@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .head-l {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 43px;
+  }
+
+  .head-m {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .body {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+input[type='range']::-webkit-slider-thumb,
+input[type='range']::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #e6e5ea;
+  cursor: pointer;
+}
+
+input[type='range']:hover::-webkit-slider-thumb,
+input[type='range']:hover::-moz-range-thumb {
+  background: #18171f;
+  border: 2px solid #a4ffaf;
+}
+
+input[type='range']::-moz-range-progress,
+input[type='range']::-webkit-slider-runnable-track {
+  background: #a4ffaf;
+}
+
+#cta:hover #arrow {
+  filter: invert(84%) sepia(33%) saturate(438%) hue-rotate(69deg)
+    brightness(104%) contrast(101%);
+}
